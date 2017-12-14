@@ -44,7 +44,7 @@
 	+ 会
 	+ 不会
 
-  [1]: https://i.redd.it/1c4f910tvloy.png
+  [1]: /asset/images/blurred_face_example.jpg
 
 
 {{ 结尾客套话 }}
