@@ -10,7 +10,7 @@ dorms_sum = sum(dorms_per_floor_list) * floors_per_building
 
 
 def main(size):
-    """Construct a SRS sample of dorms, and write it to a file named "sample.txt"
+    """Construct a SRSWOR sample of dormitories, and write it to a file named "sample.txt"
 
     Arguments:
     size -- the size of the SRS sample
@@ -24,9 +24,9 @@ def main(size):
     sample_ = sample(range(dorms_sum), size)
 
     with open('sample.txt', 'w') as f:
-        f.write('\n   === DRAFT ===   \n\n')
+        f.write('\n  === DRAFT ===  \n\n')
         f.write('  ID | Dorm No.\n')
-        f.write('---------------\n')
+        f.write('-----------------\n')
         sample_ = humanize(sample_)
         output = '\n'.join('{:4d} | {}'.format(*k) for k in enumerate(sample_))
         f.write(output)
@@ -36,7 +36,7 @@ def main(size):
 
 def humanize(sample_):
     """
-    Make indexes of a sample more human readable
+    Make indexes of a sample human-readable (e.g. 1753 -> 12-411)
     """
     humanized = []
     for idx in sample_:
