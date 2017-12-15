@@ -54,4 +54,3 @@ def humanize(sample_):
 if __name__ == '__main__':
     seed()
     main(1000)
-
