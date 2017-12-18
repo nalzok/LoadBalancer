@@ -17,7 +17,7 @@ def main(size):
     sample_ = sample(range(dorms_count), size)
 
     with open('sample.txt', 'w') as f:
-        f.write('\n  === DRAFT ===  \n\n')
+        f.write('\n  === FINAL ===  \n\n')
         f.write('  ID | Dorm No.\n')
         f.write('-----------------\n')
         sample_ = humanize(sample_)
