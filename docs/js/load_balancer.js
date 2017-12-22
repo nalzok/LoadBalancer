@@ -39,7 +39,7 @@ let inmap = new inMap.Map({
     skin: "Blueness",
     center: [121.46, 31.037], // 地图中心点
     zoom: {
-        value: 17,
+        value: 16,
         show: true
     }
 });
@@ -52,7 +52,7 @@ let overlay = new inMap.DotOverlay({
     },
     style: {
         normal: {
-            backgroundColor: "rgba(0, 0, 0, 1)",
+            backgroundColor: "rgba(255, 255, 255, 1)",
             borderColor: "rgba(255, 255, 255, 1)",
             borderWidth: 1,
             size: 9

@@ -11,32 +11,37 @@
     <link rel="stylesheet" href="css/load_balancer.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">监测平台</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">监测平台</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">首页</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">实例 <span class="sr-only">(current)</span></a>
-            </li>
-        </ul>
-    </div>
-</nav>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首页</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">实例 <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<main role="main">
-    <div id="map"></div>
-</main>
+    <main role="main">
+        <div id="map"></div>
+    </main>
 
 
-<!-- imMap JavaScript -->
-<script src="https://api.map.baidu.com/api?v=2.0&ak=1OxVZCLgdaPPQ3FGgNXSIeOMyH9r1yQP"></script>
-<script src="https://unpkg.com/inmap/dist/inmap.min.js"></script>
-<script src="js/load_balancer.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <!-- imMap JavaScript -->
+    <script src="https://api.map.baidu.com/api?v=2.0&ak=1OxVZCLgdaPPQ3FGgNXSIeOMyH9r1yQP"></script>
+    <script src="https://unpkg.com/inmap/dist/inmap.min.js"></script>
+    <script src="js/load_balancer.js" async></script>
 </body>
 </html>
