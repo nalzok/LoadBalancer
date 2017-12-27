@@ -3,27 +3,23 @@ let data = [{
         "lat": "31.0406",
         "name": "河西食堂：",
         "count": Math.floor(Math.random() * 500)
-    },
-    {
+    }, {
         "lng": "121.4570",
         "lat": "31.0414",
         "name": "河东食堂：",
         "count": Math.floor(Math.random() * 500)
-    },
-    {
+    }, {
         "lng": "121.4568",
         "lat": "31.0338",
         "name": "秋实阁：",
         "count": Math.floor(Math.random() * 500)
-    },
-    {
+    }, {
         "lng": "121.4617",
         "lat": "31.0386",
         "name": "华闽食堂：",
         "count": Math.floor(Math.random() * 500)
-    },
-    {
-        "lng": "121.4650",
+    }, {
+        "lng": "121.4648",
         "lat": "31.0405",
         "name": "秋林阁：",
         "count": Math.floor(Math.random() * 500)
@@ -37,7 +33,7 @@ let data = [{
 let inmap = new inMap.Map({
     id: 'map',
     skin: "Blueness",
-    center: [121.46, 31.037], // 地图中心点
+    center: [121.462, 31.037], // 地图中心点
     zoom: {
         value: 16,
         show: true
@@ -138,5 +134,5 @@ inmap.add(overlay);
         datum.name = datum.name.split("：")[0] + "：" + datum.count + "人";
     }
     overlay.setPoints(data);
-    setTimeout(arguments.callee, 100);
+    setTimeout(arguments.callee, 1000);
 })();
