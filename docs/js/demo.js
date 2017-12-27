@@ -33,7 +33,7 @@ let data = [{
 let inmap = new inMap.Map({
     id: 'map',
     skin: "Blueness",
-    center: [121.462, 31.037], // 地图中心点
+    center: [121.462, 31.036], // 地图中心点
     zoom: {
         value: 16,
         show: true
@@ -128,7 +128,7 @@ inmap.add(overlay);
 
 (function(){
     for (let datum of data) {
-        datum.count += Math.floor(Math.random() * 50) - 25;
+        datum.count += Math.floor(Math.random() * 20) - 10;
         if (datum.count < 0)
             datum.count = 0;
         datum.name = datum.name.split("：")[0] + "：" + datum.count + "人";
