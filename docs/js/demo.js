@@ -1,36 +1,36 @@
 let data = [{
         "lng": "121.4558",
-        "lat": "31.0410",
-        "name": "河西食堂",
+        "lat": "31.0406",
+        "name": "河西食堂：",
         "count": Math.floor(Math.random() * 500)
     },
     {
         "lng": "121.4570",
-        "lat": "31.0412",
-        "name": "河西食堂",
+        "lat": "31.0414",
+        "name": "河东食堂：",
         "count": Math.floor(Math.random() * 500)
     },
     {
         "lng": "121.4568",
         "lat": "31.0338",
-        "name": "秋实阁",
+        "name": "秋实阁：",
         "count": Math.floor(Math.random() * 500)
     },
     {
         "lng": "121.4617",
         "lat": "31.0386",
-        "name": "华闽食堂",
+        "name": "华闽食堂：",
         "count": Math.floor(Math.random() * 500)
     },
     {
         "lng": "121.4650",
         "lat": "31.0405",
-        "name": "秋林阁",
+        "name": "秋林阁：",
         "count": Math.floor(Math.random() * 500)
     }, {
         "lng": "121.4591",
         "lat": "31.0357",
-        "name": "图书馆",
+        "name": "图书馆：",
         "count": Math.floor(Math.random() * 1000)
     }];
 
@@ -45,17 +45,16 @@ let inmap = new inMap.Map({
 });
 
 let overlay = new inMap.DotOverlay({
-    tooltip: {
-        show: true,
-        position: 'top',
-        formatter: "{name}: {count}人"
-    },
     style: {
         normal: {
             backgroundColor: "rgba(255, 255, 255, 1)",
             borderColor: "rgba(255, 255, 255, 1)",
             borderWidth: 1,
-            size: 9
+            size: 9,
+            label: {
+                show: true,
+                color: "rgba(255,255,255,1)"
+            }
         },
         splitList: [{
             start: 0,
@@ -136,6 +135,7 @@ inmap.add(overlay);
         datum.count += Math.floor(Math.random() * 50) - 25;
         if (datum.count < 0)
             datum.count = 0;
+        datum.name = datum.name.split("：")[0] + "：" + datum.count + "人";
     }
     overlay.setPoints(data);
     setTimeout(arguments.callee, 100);
