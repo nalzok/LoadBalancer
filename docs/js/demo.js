@@ -33,7 +33,7 @@ let data = [{
 let inmap = new inMap.Map({
     id: 'map',
     skin: "Blueness",
-    center: [121.462, 31.036], // 地图中心点
+    center: [121.462, 31.035], // 地图中心点
     zoom: {
         value: 16,
         show: true
